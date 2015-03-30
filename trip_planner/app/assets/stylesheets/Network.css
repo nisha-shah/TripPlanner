@@ -1,0 +1,23 @@
+﻿.ntrip_label_name{
+    font-weight: bold;
+}
+
+.ntrip_label_img{
+    margin-top: 5px;
+}
+
+.each_trip{
+    border:1px solid grey;
+    margin-top:5px;
+}
+
+.etrip_name {
+    margin-left: 10px;
+    font-family: 16px Raleway #000000;
+    font-weight: bold;
+}
+
+.etrip_img{
+    width:100%;
+    height:100%;
+}

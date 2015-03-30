@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>TripPlanner</title>
+    	<%= stylesheet_link_tag "bootstrap.min" %>
+    	<%= stylesheet_link_tag "Network" %>
+    	<%= javascript_include_tag "application" %>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+  			<div class="container">
+  	 			 <button type="button" id="newTrip" class="btn btn-default navbar-btn" style="float:right;background-color:green;color:white;font-weight:bold;">New Trip +</button>
+           
+ 			 </div>
+		</nav>  
+
+
+
+     
+
+  		  <%= yield %>	
+
+	</body>
+</html>

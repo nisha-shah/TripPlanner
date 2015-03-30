@@ -1,0 +1,30 @@
+
+<%= form_for @trip1, :html => { :multipart => "true"}, :url => { :action => "create" },remote: true do |f| %>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade" style="margin-top:50px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">New Trip Plan</h4>
+                </div>
+                
+                <div class="modal-body">
+                    <label for="trip_name" class="ntrip_label_name">Name</label><br/>
+                    <%= f.text_field :trip_name %><br/>
+                    <label for="trip_image" class="ntrip_label_img">My Trip Plan's image</label>
+                    <%= f.file_field :image %></br>
+                </div> <!-- End of modal-body -->
+  
+                <div class="modal-footer">
+                   <%= f.submit 'Create', :class => 'btn btn-primary' %>
+                </div>
+
+            </div> <!-- End of modal-content --> 
+        </div> <!-- End of modal-dialog -->
+    </div><!-- End of modal -->
+<% end %>   
+
+
+
